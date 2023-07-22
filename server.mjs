@@ -20,7 +20,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/auth',auths);
 app.use('/api',user_routes);
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`Running on port: ${PORT}`);
